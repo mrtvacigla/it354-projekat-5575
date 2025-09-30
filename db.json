@@ -1,0 +1,92 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@test.com",
+      "password": "admin123",
+      "name": "Admin User",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "user@test.com",
+      "password": "user123",
+      "name": "John Doe",
+      "role": "user"
+    }
+  ],
+  "expenses": [
+    {
+      "id": 1,
+      "userId": 2,
+      "amount": 50,
+      "category": "Food",
+      "description": "Groceries from supermarket",
+      "date": "2025-09-20"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "amount": 30,
+      "category": "Transport",
+      "description": "Gas",
+      "date": "2025-09-22"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "amount": 100,
+      "category": "Entertainment",
+      "description": "Concert tickets",
+      "date": "2025-09-25"
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "amount": 200,
+      "category": "Bills",
+      "description": "Electric bill",
+      "date": "2025-09-10"
+    },
+    {
+      "id": 5,
+      "userId": 2,
+      "amount": 75,
+      "category": "Food",
+      "description": "Restaurant",
+      "date": "2025-09-18"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Food",
+      "color": "#ef4444",
+      "budgetLimit": 500
+    },
+    {
+      "id": 2,
+      "name": "Transport",
+      "color": "#3b82f6",
+      "budgetLimit": 200
+    },
+    {
+      "id": 3,
+      "name": "Entertainment",
+      "color": "#8b5cf6",
+      "budgetLimit": 300
+    },
+    {
+      "id": 4,
+      "name": "Bills",
+      "color": "#f59e0b",
+      "budgetLimit": 1000
+    },
+    {
+      "id": 5,
+      "name": "Shopping",
+      "color": "#10b981",
+      "budgetLimit": 400
+    }
+  ]
+}
