@@ -1,18 +1,16 @@
-import React from 'react'
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './components/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar'
 
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import ExpenseList from './pages/ExpenseList';
+import AdminDashboard from './pages/AdminDashboard';
 import UserManagement from './pages/UserManagement';
+import CategoryManagement from './pages/CategoryManagement';
 
 function App() {
   return (
@@ -40,13 +38,30 @@ function App() {
               </ProtectedRoute>
             }
           />
-         
+          <Route
+            path="/admin"
+            element={
+              <ProtectedRoute adminOnly>
+                <Navbar />
+                <AdminDashboard />
+              </ProtectedRoute>
+            }
+          />
           <Route
             path="/admin/users"
             element={
               <ProtectedRoute adminOnly>
                 <Navbar />
                 <UserManagement />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/admin/categories"
+            element={
+              <ProtectedRoute adminOnly>
+                <Navbar />
+                <CategoryManagement />
               </ProtectedRoute>
             }
           />
