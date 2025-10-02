@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './components/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -17,6 +18,7 @@ function App() {
   return (
     <BrowserRouter>
       <AuthProvider>
+        <div className="container mx-auto">
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
@@ -88,6 +90,7 @@ function App() {
 
           <Route path="/" element={<Navigate to="/login" />} />
         </Routes>
+        </div>
       </AuthProvider>
     </BrowserRouter>
   );
