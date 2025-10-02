@@ -2,12 +2,13 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider } from './components/AuthContext';
 import ProtectedRoute from './components/ProtectedRoute';
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar';
 
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
 import ExpenseList from './pages/ExpenseList';
+import ExpenseForm from './pages/ExpenseForm';
 import AdminDashboard from './pages/AdminDashboard';
 import UserManagement from './pages/UserManagement';
 import CategoryManagement from './pages/CategoryManagement';
@@ -38,6 +39,25 @@ function App() {
               </ProtectedRoute>
             }
           />
+          <Route
+            path="/expenses/add"
+            element={
+              <ProtectedRoute>
+                <Navbar />
+                <ExpenseForm />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/expenses/edit/:id"
+            element={
+              <ProtectedRoute>
+                <Navbar />
+                <ExpenseForm />
+              </ProtectedRoute>
+            }
+          />
+
           <Route
             path="/admin"
             element={

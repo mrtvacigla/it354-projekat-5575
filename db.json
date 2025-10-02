@@ -1,92 +1,114 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "email": "admin@test.com",
       "password": "admin123",
-      "name": "Admin User",
+      "name": "Admin",
       "role": "admin"
     },
     {
-      "id": 2,
+      "id": "2",
       "email": "user@test.com",
       "password": "user123",
-      "name": "John Doe",
+      "name": "User",
       "role": "user"
     }
   ],
   "expenses": [
     {
-      "id": 1,
-      "userId": 2,
-      "amount": 50,
+      "userId": "2",
+      "amount": 55,
       "category": "Food",
       "description": "Groceries from supermarket",
-      "date": "2025-09-20"
+      "date": "2025-09-20",
+      "id": "1"
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": 2,
       "amount": 30,
       "category": "Transport",
       "description": "Gas",
-      "date": "2025-09-22"
+      "date": "2025-09-29"
     },
     {
-      "id": 3,
+      "id": "3",
       "userId": 2,
       "amount": 100,
       "category": "Entertainment",
       "description": "Concert tickets",
-      "date": "2025-09-25"
+      "date": "2025-09-28"
     },
     {
-      "id": 4,
+      "id": "4",
       "userId": 2,
-      "amount": 200,
+      "amount": 140,
       "category": "Bills",
       "description": "Electric bill",
-      "date": "2025-09-10"
+      "date": "2025-09-30"
     },
     {
-      "id": 5,
+      "id": "5",
       "userId": 2,
       "amount": 75,
       "category": "Food",
       "description": "Restaurant",
-      "date": "2025-09-18"
+      "date": "2025-10-01"
+    },
+    {
+      "userId": "2",
+      "amount": 200,
+      "category": "Fakultet",
+      "description": "Mesecno",
+      "date": "2025-10-02",
+      "id": "14cc"
+    },
+    {
+      "userId": "2",
+      "amount": 100,
+      "category": "Shopping",
+      "description": "ACE60 Pro tastatura",
+      "date": "2025-09-28",
+      "id": "14rr"
     }
   ],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Food",
       "color": "#ef4444",
       "budgetLimit": 500
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Transport",
       "color": "#3b82f6",
       "budgetLimit": 200
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Entertainment",
       "color": "#8b5cf6",
       "budgetLimit": 300
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Bills",
       "color": "#f59e0b",
       "budgetLimit": 1000
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Shopping",
       "color": "#10b981",
       "budgetLimit": 400
+    },
+    {
+      "id": "b66a",
+      "name": "Fakultet",
+      "color": "#c89d9d",
+      "budgetLimit": 10000000
     }
   ]
 }
